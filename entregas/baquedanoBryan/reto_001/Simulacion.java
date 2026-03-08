@@ -9,7 +9,7 @@ public class Simulacion {
     }
 
     private static void llenarFila(Fila fila) {
-        for (int i = 1; i <= 15; i++) {
+        for (int i = 1; i <= fila.getCapacidad(); i++) {
             int numItems = (int) (Math.random() * 11);
             Cliente nuevoCliente = new Cliente(numItems);
             fila.agregarCliente(nuevoCliente);
