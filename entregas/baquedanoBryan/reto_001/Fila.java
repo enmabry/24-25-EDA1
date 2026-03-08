@@ -25,7 +25,6 @@ public class Fila {
 
     public void atenderCliente() {
         if (numClientes > 0) { 
-            Cliente atendido = fila[0]; 
             desplazarClientesIzquierda(); 
             numClientes--; 
         } else {
