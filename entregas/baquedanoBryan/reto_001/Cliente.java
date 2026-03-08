@@ -18,12 +18,6 @@ public class Cliente{
         }
     }
 
-    public void disminuirItems(int cantidad) {
-        if (cantidad > 0 && this.numItems >= cantidad) {
-            this.numItems -= cantidad;
-        }
-    }
-
     @Override
     public String toString() {
         return "Cliente con " + numItems + " ítems.";
