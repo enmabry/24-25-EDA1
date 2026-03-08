@@ -83,14 +83,12 @@ public class Fila {
         }
     }
 
-    
     private void desplazarClientesDerecha() {
         for (int i = numClientes; i > 0; i--) {
             fila[i] = fila[i - 1]; 
         }
     }
 
-    
     public void cuelaIlícita() {
         if (numClientes < capacidad) { 
             fila[numClientes] = new Cliente((int) (Math.random() * 15)); 
@@ -119,7 +117,6 @@ public class Fila {
             }
         }
     
-        
         public void mostrarFila() {
             if (numClientes == 0) { 
                 System.out.println("Fila vacía."); 
@@ -131,7 +128,7 @@ public class Fila {
             }
         }
 
-        public int getCapacidad() {
+        private int getCapacidad() {
             return capacidad;
         }
     }
